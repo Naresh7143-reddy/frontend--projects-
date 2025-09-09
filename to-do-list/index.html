@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="todoapp">
+      <h2>To-do-list 
+        <img src="https://cdn.vectorstock.com/i/1000v/38/98/pen-and-a-notepad-vector-1183898.jpg" alt="image icon">
+      </h2>
+
+      <div class="taskcontainer">
+        <input type="text" id="task" placeholder="write the task....">
+        <button onclick="addtask()">Add</button>
+      </div> 
+
+      <!-- ✅ Wrap tasks inside <ul> -->
+      <div class="listcontainer">
+        <ul id="list">
+         
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

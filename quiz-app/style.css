@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  padding: 20px;
+}
+
+/* App Container */
+.app {
+  width: 80%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+.app h1 {
+  font-size: 40px;
+  color: #333;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+.app h1:hover {
+  transform: scale(1.05);
+}
+
+/* Question */
+.question {
+  text-align: left;
+  font-size: 26px;
+  color: #444;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: white;
+  width: 80%;
+  height: 60px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.next{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f53d06, #df4408);
+  color: white;
+  width: 40%;
+  height: 60px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(158, 71, 71, 0.15);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app {
+    width: 95%;
+    padding: 20px;
+  }
+  .app h1 {
+    font-size: 30px;
+  }
+  .question {
+    font-size: 22px;
+  }
+  .btn {
+    height: 55px;
+    font-size: 18px;
+  }
+}
